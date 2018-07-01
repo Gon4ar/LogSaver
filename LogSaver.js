@@ -12,6 +12,7 @@
 // @match      http://mush.twinoid.es/*
 // @match      http://mush.twinoid.es/#
 // @require    https://code.jquery.com/jquery-2.2.1.min.js
+// @downloadURL https://github.com/Gon4ar/LogSaver/blob/master/LogSaver.js
 // ==/UserScript==
 
 (function() {
