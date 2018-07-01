@@ -12,6 +12,7 @@
 // @match      http://mush.twinoid.es/*
 // @match      http://mush.twinoid.es/#
 // @require    https://code.jquery.com/jquery-2.2.1.min.js
+// @require    https://greasemonkey.github.io/gm4-polyfill/gm4-polyfill.js
 // @downloadURL https://github.com/Gon4ar/LogSaver/blob/master/LogSaver.js
 // ==/UserScript==
 
@@ -246,7 +247,7 @@ logSaver.restoreInfo = function () {
 
 logSaver.clearInfo = function () {
     console.log('clearInfo');
-    if (confirm("Удалить логи?")) {
+    if (confirm("Г“Г¤Г Г«ГЁГІГј Г«Г®ГЈГЁ?")) {
         this.mainInfo.roomLogs = {};
         localStorage['logSaver'] = {};
     } else {
