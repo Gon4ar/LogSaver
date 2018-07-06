@@ -247,7 +247,7 @@ logSaver.clearInfo = function () {
     console.log('clearInfo');
     if (confirm("Удалить логи?")) {
         this.mainInfo.roomLogs = {};
-        localStorage['logSaver'] = {};
+        localStorage['logSaver'] = '';
     } else {
     }
 
