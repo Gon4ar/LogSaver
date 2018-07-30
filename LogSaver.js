@@ -162,6 +162,16 @@ logSaver.insertLog = function (roomName) {
         $(this).removeClass('not_read');
     });
     this.nodes.created.roomLog.find('.recent').remove();
+  
+  	this.nodes.created.roomLog.find('.day_cycle').on ('click', function (event) {
+    	event.preventDefault();
+      $(this).next('.cdContent').toggle();
+      if ($(this).find('img').attr('src')==='/img/icons/ui/less.png')
+        $(this).find('img').attr('src','/img/icons/ui/more.png');
+      else
+        $(this).find('img').attr('src','/img/icons/ui/less.png');
+    });
+  
     return true;
 }
 
@@ -262,7 +272,6 @@ $(function () {
     var logSaverTimer = setInterval(function() {
         //logSaver.saveCurrentRoom();
     }, 4000);
-    console.log(logSaver);
 });
 
 
@@ -285,5 +294,3 @@ addGlobalStyle ('#logSaverRoomList {position: absolute;top: 0px;right: -80px;}')
 addGlobalStyle ('#logSaverRoomList a.butmini {display: block;}');
 addGlobalStyle ('#logSaverRoomList a.butmini:first-of-type {margin-bottom: 10px;}');
 addGlobalStyle ('#logSaverHideButton {position: absolute;top: -20px;right: -80px;}');
-
-
